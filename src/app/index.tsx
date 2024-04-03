@@ -1,9 +1,9 @@
-import {View, Text, TextInput} from "react-native"
+import {View, Text} from "react-native"
 
 export default function Home(){
   return(
-      <View style={{backgroundColor: "#7A8D91", display: "flex", flex: 1, alignItems: "center"}}>
-        <Text style={{color: "#fff"}}>
+      <View className="bg-zinc-800">
+        <Text >
           Hello World!
         </Text>
       </View>
