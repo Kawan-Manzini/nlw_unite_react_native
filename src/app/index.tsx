@@ -3,17 +3,18 @@ import { Input } from "@/components/input"
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 import { colors } from "@/styles/colors"
 import { Button } from "@/components/button"
-import { Link } from "expo-router"
+import { Link, router } from "expo-router"
 import { useState } from "react"
 
 export default function Home() {
   const [code, setCode] = useState("")
 
   function handleAccessCredencial(){
-    if(!code.trim()){
-      return Alert.alert("Ingresso", "Informe o codigo do ingresso!")
-    }
-    
+    // if(!code.trim()){
+    //   return Alert.alert("Ingresso", "Informe o codigo do ingresso!")
+    // }
+    router.push('/ticket')
+
   }
   return (
       <View className="bg-green-500 flex-1 items-center justify-center p-8 ">
